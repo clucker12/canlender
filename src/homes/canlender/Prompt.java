@@ -13,7 +13,11 @@ public class Prompt {
 //        System.out.println("반복횟수를 입력하세요.");
 //        int count=scanner.nextInt();
         int month=0;
+        int year=0;
         while (month !=-1){
+            System.out.println("연도를 입력하세요");
+            System.out.print(PROMPT);
+            year = scanner.nextInt();
             System.out.println("월을 입력하세요");
             System.out.print(PROMPT);
             month = scanner.nextInt();
@@ -24,7 +28,7 @@ public class Prompt {
                 continue;
             }else{
                 //System.out.printf("%d월은 %d일까지 있습니다.\n", month,cal.maxDaysOfMonth(month));
-                cal.printSempleCalendar(month);
+                cal.printCalendar(year,month);
             }
         }
 
